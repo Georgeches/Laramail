@@ -55,7 +55,7 @@ class TestMail extends Mailable
     public function attachments(): array
     {
         return [
-            Attachment::fromPath('C:/Users/chesi_2zjtdnu/Documents/TFN_declaration_form.pdf')
+            Attachment::fromPath('path/file')
                 ->as('file.pdf')
                 ->withMime('application/pdf'),
         ];
